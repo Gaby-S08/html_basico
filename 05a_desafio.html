@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>GameZone Retro</title>
+     <meta charset="UTF-8">
+     <title>GameZone Retro 🎮</title>
+     <style>
+          body {
+               margin: 0;
+               background: url('https://i.gifer.com/R8pF.gif') no-repeat center center;
+               background-size: cover;
+               color: white; /* texto mais visível */
+               position: relative;
+          }
+
+          /* Camada escura sobre o GIF para destacar o texto */
+          body::before {
+               content: "";
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background-color: rgba(0, 0, 0, 0.5); /* escurece o fundo */
+               z-index: 0;
+          }
+
+          /* Coloca o conteúdo acima da camada escura */
+          body * {
+               position: relative;
+               z-index: 1;
+          }
+
+          a {
+               color: #ffcc00; /* links mais visíveis */
+             
+               /* Abaixo a parte essencial do projeto*/
+          }
+     </style>
 
 
 
 
 </head>
 <body style="background-color: rgb(255, 255, 255);"></body>
-<h1>🎮 GameZone Retro</h1>
+<h1 style="color: chartreuse;">🎮 GameZone Retro</h1>
 <p>Bem-vindo à <b>GameZone Retro</b>, a loja para fãs de <i>jogos clássicos</i> e consoles nostálgicos!</p>
 
 <a href="#tabela">Ver preços</a> | 
@@ -17,7 +50,7 @@
 
 
 
-<h2> 🕹️Consoles disponíveis</h2>
+<h2 style="color: #eaff00;"> 🕹️Consoles disponíveis</h2>
 <ul>
 <li>Nintendo 64</li>
 <li>PlayStation 1</li>
@@ -30,7 +63,7 @@
 
 <img src="assets/retro.jpg" width="250" alt="Nintendo 64">
 
-<h2 id="tabela">💰Tabela de preços</h2>
+<h2 id="tabela" style="color: #77ff00;">💰Tabela de preços</h2>
 <table border="1" cellpadding="5">
 <tr><th>Produto</th><th>Consoles</th><th>Preço</th></tr>
 <tr><td>Super Mario 64</td><td>NES</td><td>R$ 120</td></tr>
