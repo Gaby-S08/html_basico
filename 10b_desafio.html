@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Captures</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      margin: 0;
+      background: #00085e;
+      color: #333333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #070046;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #00f2ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #5f03ff;
+      margin-bottom: 15px;
+    }
+
+    .galeria {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .galeria img {
+      width: 280px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+
+    ul li strong {
+      color: #0ca6ff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, select, textarea, button {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #333;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📸 Luna Captures</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#serviços">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Luna</h2>
+    <p>Fotógrafa há <strong>8 anos</strong> especializada em <em>momentos únicos</em>.</p>
+    <blockquote>
+      "A fotografia captura não apenas o que vemos, mas o que sentimos."
+    </blockquote>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="galeria">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCChmwmPyV3NcEFiT5LP1l2ekfpR6lmN_5sw&s" alt="Casamento na praia">
+      <img src="https://storage.alboom.ninja/sites/7713/media/casamento-no-por-do-sol-fazenda-capituva-mefi-maryana-casamento-no-campo-diego-ragazoni-heber-oliveira_banner-1_98877060eba6.jpg?t=1526906383" alt="Casamento ao pôr do sol">
+      <img src="https://images.unsplash.com/photo-1495562569060-2eec283d3391" alt="Casal no pôr do sol">
+    </div>
+  </section>
+
+  <section id="serviços">
+    <h2>Serviços</h2>
+    <ul>
+      <li><strong>Casamentos</strong> - R$ 1.200</li>
+      <li><strong>Retratos</strong> - R$ 350</li>
+      <li><strong>Eventos</strong> - R$ 600</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="Email" required>
+      <label>Evento:
+        <select>
+          <option>Casamento</option>
+          <option>Retrato</option>
+          <option>Evento</option>
+        </select>
+      </label>
+      <textarea rows="4" placeholder="Detalhes"></textarea>
+      <button type="submit">Solicitar Orçamento</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Luna Captures | <a href="mailto:luna@exemplo.com">luna@exemplo.com</a>
+  </footer>
+</body>
+</html>

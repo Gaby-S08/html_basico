@@ -1,9 +1,55 @@
-<!-- Desafio 2 digitação (Aqui) -->
- 
-<!-- Obs: Ler (10a_desafio.md) para orientações -->
-<!-- Imagem de como deve ficar pronto na pasta assets (desafio 2.jpg) -->
-
-<!-- 📱 🚀 📺 📧 emojis para usar no projeto -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TechNews Today</title>
+<style>
+  body{font-family:Arial, sans-serif;margin:0;background:#86ff78;color:#333}
+  header,footer{background:#111;color:#fff;text-align:center;padding:1rem}
+  nav a{color:#0ff;margin:0 .5rem;text-decoration:none}
+  main{padding:1rem;max-width:900px;margin:auto}
+  article,section{background:#fff;padding:1rem;margin:1rem 0;border-radius:8px;box-shadow:0 2px 5px #0002}
+  h1,h2,h3{margin:.5rem 0}
+  form{display:grid;gap:.5rem}
+  input,select,button{padding:.5rem;border:1px solid #ccc;border-radius:5px}
+  button{background:#111;color:#fff;cursor:pointer}
+  button:hover{background:rgb(17, 85, 0);color:#000}
+</style>
+</head>
+<body>
+<header>
+  <h1>TechNews Today</h1>
+  <nav><a href="#ultimas">Últimas</a>|<a href="#videos">Vídeos</a>|<a href="#inscricao">Newsletter</a></nav>
+</header>
+<main id="ultimas">
+  <article>
+    <h2>IA generativa chega ao celular</h2>
+    <p><time datetime="2025-08-21">21 Ago 2025</time> &rarr; Novos chips aceleram modelos locais.</p>
+    <details><summary>Leia mais</summary><p>Fabricantes adotam NPU e <em>edge AI</em> para reduzir latência.</p></details>
+  </article>
+  <article>
+    <h2>Web aberta ganha novo padrão</h2>
+    <p><time datetime="2025-08-18">18 Ago 2025</time> &rarr; Navegadores adotam API unificada.</p>
+    <details><summary>Impacto</summary><p>Login sem senha e melhor interoperabilidade.</p></details>
+  </article>
+  <section id="videos">
+    <h3>Resumo da semana</h3>
+    <iframe width="100%" height="315" src="assets/meu-video.mp4" allowfullscreen></iframe>
+  </section>
+  <section id="inscricao">
+    <h3>Assine a newsletter</h3>
+    <form>
+      <input name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <select name="tema"><option>IA</option><option>Mobile</option><option>Web</option></select>
+      <button>Inscrever</button>
+    </form>
+  </section>
+</main>
+<footer>&copy; 2025 TechNews Today · <a href="#topo" style="color:#0ff">Topo &uarr;</a></footer>
+</body>
+</html>
 
 
 
